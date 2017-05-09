@@ -6,14 +6,14 @@
         - @page.errors.full_messages.each do |message|
           %li= message
 
-  .field
-    = f.label :title
-    = f.text_field :title
-  .field
+
+  %p
+   = f.label :title
+   = f.text_field :title, class: "form-control"
+  %p
     = f.label :body
-    = f.text_area :body
-  .field
+  %p
     = f.label :slug
-    = f.text_field :slug
-  .actions
+    = f.text_field :slug, class: "form-control"
+   %p
     = f.submit 'Save'
